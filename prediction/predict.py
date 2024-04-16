@@ -1,6 +1,7 @@
 import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
+from PIL import image
 import os
 
 class DogCat:
@@ -27,5 +28,6 @@ class DogCat:
         else:
             prediction = 'cat'
             return [{ "image" : prediction}]
+
 
 
